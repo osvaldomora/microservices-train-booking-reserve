@@ -1,0 +1,13 @@
+package train.ticket.booking.app.user;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class TrainTicketBookingUserApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TrainTicketBookingUserApplication.class, args);
+	}
+
+}

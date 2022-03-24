@@ -1,0 +1,8 @@
+spring.application.name=users-service
+server.port=9091 
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka
+#${PORT:0}
+
+#eureka.instance.instance-id=${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+logging.level.org.hibernate.SQL=debug
