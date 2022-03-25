@@ -4,4 +4,6 @@
     <fullyQualifiedTypeName name="train.ticket.booking.app.user.entity.User"/>
     <fullyQualifiedTypeName name="train.ticket.booking.app.user.constants.Constants"/>
     <fullyQualifiedTypeName name="train.ticket.booking.app.user.exception.UserNotFoundException"/>
+    <fullyQualifiedTypeName name="antlr.collections.List"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

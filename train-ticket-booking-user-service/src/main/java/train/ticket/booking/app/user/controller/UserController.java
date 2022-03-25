@@ -27,7 +27,7 @@ public class UserController {
 	@PostMapping(value = "/users", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<?> users(@Valid @RequestBody UserReq userReq) {
 		
-
+          System.out.println("in the server");
 		return new ResponseEntity<>(userService.findByNameAndPassword(userReq.getName(), userReq.getPassword()),
 				HttpStatus.OK);
 
