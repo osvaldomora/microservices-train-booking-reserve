@@ -21,17 +21,16 @@ public class UserServiceImpl implements IUserService{
 	IMappingService mapping;
 	
 	@Override
-	public UserDto findByNameAndPassword(String name, String pass) {
+	public User findByNameAndPassword(String name, String pass) {
 		
 		User user=	userRepo.findByUsernameAndPassword(name, pass)
 				.orElseThrow(() -> new UserNotFoundException("User not found"));
-//		System.out.println(user);
-//        if(!user.isPresent())
-//		    throw new UserNotFoundException("User not found");
+
         
-		UserDto userDto=mapping.mappingUSer(user);
-		System.out.println(userDto);
-		return userDto;
+//		UserDto userDto=mapping.mappingUSer(user);
+//		System.out.println(userDto);
+		user.setPassword("");
+		return user;
 	}
 
 

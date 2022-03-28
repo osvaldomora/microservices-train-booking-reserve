@@ -19,6 +19,9 @@ public class Seat {
 	private Integer row;
 	 @Column(name="valueNumber") 
 	private Integer number;
+	 
+	private boolean available;
+	
 	
 	@ManyToOne
 	private Train train;
@@ -47,6 +50,15 @@ public class Seat {
 		this.number = number;
 	}
 
+	
+	public boolean isAvailable() {
+		return available;
+	}
+
+	public void setAvailable(boolean available) {
+		this.available = available;
+	}
+
 	public Train getTrain() {
 		return train;
 	}
@@ -55,8 +67,5 @@ public class Seat {
 		this.train = trainid;
 	}
 	
-	
-	
-	
-	
+
 }

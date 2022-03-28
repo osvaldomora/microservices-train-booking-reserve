@@ -2,6 +2,7 @@ package train.ticket.booking.app.train.entity;
 
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -23,9 +24,15 @@ public class Train {
 	
 	
 	@OneToMany(mappedBy = "train")
-	private List<Seat> seats;
+	private List<Seat> seats = new ArrayList<>();
 	
 	
+	public List<Seat> getSeats() {
+		return seats;
+	}
+	public void setSeats(List<Seat> seats) {
+		this.seats = seats;
+	}
 	public Integer getTrainId() {
 		return trainId;
 	}
