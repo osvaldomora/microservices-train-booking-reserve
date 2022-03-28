@@ -16,19 +16,15 @@ import train.ticket.booking.app.train.service.ITrainService;
 
 
 @RestController
-//@RequestMapping("/trains/v1")
-
 public class TrainController {
 	@Autowired
-	private ITrainService userService;
-
-
+	private ITrainService trainService;
 
 	@GetMapping(value = "/trains/{train-id}/seats/{seat-number}", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<TrainDto> trains(@Valid @PathVariable("train-id") Integer trainId,@PathVariable("seat-number") Integer seatNumber) {
 		System.out.println("Entrando en users");
            
-		return new ResponseEntity<>(userService.findById(trainId, seatNumber),
+		return new ResponseEntity<>(trainService.findById(trainId, seatNumber),
 				HttpStatus.OK);
 
 	}

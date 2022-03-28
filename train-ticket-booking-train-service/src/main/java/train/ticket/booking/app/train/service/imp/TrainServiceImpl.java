@@ -14,7 +14,7 @@ import train.ticket.booking.app.train.service.ITrainService;
 
 
 @Service
-public class UserServiceImpl implements ITrainService{
+public class TrainServiceImpl implements ITrainService{
 
        @Autowired
        TrainRepository trainRepository;

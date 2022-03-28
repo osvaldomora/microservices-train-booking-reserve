@@ -6,9 +6,4 @@ public interface ITrainService {
 	
 	TrainDto findById(Integer trainId, Integer seatNumber) ;
 
-
-	 
-	 
-	 
-
 }
