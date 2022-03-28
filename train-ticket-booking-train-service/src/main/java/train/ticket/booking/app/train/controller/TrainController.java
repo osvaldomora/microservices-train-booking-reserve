@@ -1,6 +1,8 @@
 package train.ticket.booking.app.train.controller;
 
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +13,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import train.ticket.booking.app.train.dto.TrainSearchByDetsReponseDTO;
 import train.ticket.booking.app.train.dto.response.TrainDto;
+import train.ticket.booking.app.train.dto.response.TrainSearchDto;
 import train.ticket.booking.app.train.service.ITrainService;
 
 
@@ -21,14 +25,22 @@ public class TrainController {
 	private ITrainService trainService;
 
 	@GetMapping(value = "/trains/{train-id}/seats/{seat-number}", produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<TrainDto> trains(@Valid @PathVariable("train-id") Integer trainId,@PathVariable("seat-number") Integer seatNumber) {
+	public ResponseEntity<TrainDto> trains(@Valid @PathVariable("train-id") Integer trainId,
+			@PathVariable("seat-number") Integer seatNumber) {
 		System.out.println("Entrando en users");
            
 		return new ResponseEntity<>(trainService.findById(trainId, seatNumber),
 				HttpStatus.OK);
-
 	}
-
-
-
+	//source, destination, date
+	@GetMapping(value = "train/search/{source}/{destination}/{date}", produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<TrainSearchByDetsReponseDTO> searchTrainBySourceDestination(@Valid @PathVariable("source") String sourceT, 
+			@PathVariable("destination") String destinationT,
+			@PathVariable("date") String dateT){
+		
+		TrainSearchByDetsReponseDTO trainSearchDto = trainService.findBySearchDetails(sourceT, destinationT, dateT);
+		
+		
+		return new ResponseEntity<TrainSearchByDetsReponseDTO>(trainSearchDto, HttpStatus.OK);
+	}
 }

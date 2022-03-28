@@ -18,7 +18,7 @@ public class SwaggerConfig {
 	public Docket Api() {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
-				.apis(RequestHandlerSelectors.basePackage("com.foodordering.demo"))
+				.apis(RequestHandlerSelectors.basePackage("train.ticket.booking.app.train"))
 				.paths(PathSelectors.any())
 				.build()
 				.pathMapping("/")
@@ -27,7 +27,7 @@ public class SwaggerConfig {
 	
 	private ApiInfo apiInfo() {
 		return new ApiInfoBuilder()
-				.title("Food Ordering Service")
-				.description("APIS for Food Ordering relateed operations").build();
+				.title("Train Booking Service")
+				.description("APIS for Train Booking Service related operations").build();
 	}
 }
