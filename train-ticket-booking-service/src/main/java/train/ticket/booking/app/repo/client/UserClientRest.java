@@ -4,7 +4,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import train.ticket.booking.app.dto.UserData;
+import train.ticket.booking.app.dto.UserClient;
 import train.ticket.booking.app.dto.UserReq;
 
 
@@ -12,7 +12,7 @@ import train.ticket.booking.app.dto.UserReq;
 public interface UserClientRest {
 	
 	@PostMapping("/users")
-	public UserData login(UserReq user);
+	public UserClient login(UserReq user);
 	
 	@GetMapping("/users/port")
 	public int port();

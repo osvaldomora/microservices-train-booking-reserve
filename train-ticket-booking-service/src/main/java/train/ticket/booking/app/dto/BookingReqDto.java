@@ -14,8 +14,9 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class BookingReqDto {
-    
-	List<UserData> usersData;
+	private String username;
+	private String password;
+	List<UserDataDto> usersData;
 	
 
 

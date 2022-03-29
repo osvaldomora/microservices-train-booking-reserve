@@ -1,4 +1,4 @@
-package train.ticket.booking.app.dto;
+package train.ticket.booking.app.dto.client.passanger;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,13 +11,12 @@ import lombok.Setter;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserData {
+public class BookingReqClientDto {
 	
-	private Integer userId;
-	private String username;
-	private String password;
-	private Integer trainId;
-	private Integer seatNumber;
-
-
+	private Integer bookingId;
+	private String name;
+	private String surname;
+	
 }
+
+
