@@ -5,7 +5,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import train.ticket.booking.app.dto.client.TrainDto;
+import train.ticket.booking.app.dto.client.train.TrainDto;
 
 @Getter
 @Setter

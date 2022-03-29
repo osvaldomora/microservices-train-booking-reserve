@@ -11,8 +11,9 @@ import lombok.extern.slf4j.Slf4j;
 import train.ticket.booking.app.dto.BookingReqDto;
 import train.ticket.booking.app.dto.UserClient;
 import train.ticket.booking.app.dto.UserReq;
-import train.ticket.booking.app.dto.client.TrainDto;
-import train.ticket.booking.app.dto.client.passanger.BookingReqClientDto;
+import train.ticket.booking.app.dto.client.passenger.PassengerClient;
+import train.ticket.booking.app.dto.client.train.TrainDto;
+import train.ticket.booking.app.dto.client.train.passanger.BookingReqClientDto;
 import train.ticket.booking.app.dto.response.BookingResponseDto;
 import train.ticket.booking.app.entity.Booking;
 import train.ticket.booking.app.repo.client.PassengerClientRest;
@@ -69,9 +70,12 @@ public class BookingServiceImpl implements IBookingService{
 //	        System.out.println("the user Id value is:"+us.getUserId());
 	          Booking book= Booking.builder().trainId(us.getTrain().getTrainId()).userId(use.getUserId()).build(); 
 	          book=  bookingRepository.save(book);
-	          //I need to insert data in tha api pasanger, booking id,username,surname
-	          bookingRes =  BookingResponseDto.builder().name(us.getUsername()).surname(us.getSurname()).trainDto(trainDto).build();
+	          //I need to insert data in tha api pasanger, booking id,username,surname,seatId
+	          bookingRes =  BookingResponseDto.builder().name(us.getUsername())
+	        		  .surname(us.getSurname()).trainDto(trainDto).build();
 	          passengerClientRest.passanger(BookingReqClientDto.builder().bookingId(book.getBookingId())
+	        		  .userId(use.getUserId())
+	        		  .seatId(us.getTrain().getSeatNumber())
 	        		  .name(bookingRes.getName())
 	        		  .surname(bookingRes.getSurname()).build());
 	         return bookingRes;
@@ -85,6 +89,25 @@ public class BookingServiceImpl implements IBookingService{
 	public Integer getPort() {
 		
 		return userClientRestFeign.port();
+	}
+
+	@Override
+	public List<BookingResponseDto> bookings(Integer idUser) {
+		log.info("idUser"+idUser);
+		List<PassengerClient> listP=passengerClientRest.passanger(idUser);
+		log.info("PassengerClient"+listP.size());
+		 List<BookingResponseDto> response =	listP.stream().map(passenger->{ 
+			Booking booking=bookingRepository.findById(passenger.getBookingId()).orElseThrow(()-> new RuntimeException());
+			
+			log.info("brrajinG");
+			TrainDto trainDto=  trainClientRestFeign.trains(booking.getTrainId(), passenger.getSeatId());
+			BookingResponseDto br= BookingResponseDto.builder().name(passenger.getName()).surname(passenger.getSurname()).trainDto(trainDto).build();
+			return br;
+		}).collect(Collectors.toList());
+		
+
+		
+		return response;
 	}
 	
 

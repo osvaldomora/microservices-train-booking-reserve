@@ -14,6 +14,8 @@ import lombok.Setter;
 public class BookingReqDto {
 	
 	private Integer bookingId;
+	private Integer userId;
+	private Integer seatId;
 	private String name;
 	private String surname;
 	
