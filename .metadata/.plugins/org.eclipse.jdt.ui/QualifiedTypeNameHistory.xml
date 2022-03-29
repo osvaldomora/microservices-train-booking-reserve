@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.EnableEurekaClient"/>
+    <fullyQualifiedTypeName name="train.ticket.booking.app.user.entity.User"/>
+    <fullyQualifiedTypeName name="train.ticket.booking.app.user.constants.Constants"/>
+    <fullyQualifiedTypeName name="train.ticket.booking.app.user.exception.UserNotFoundException"/>
+    <fullyQualifiedTypeName name="antlr.collections.List"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
