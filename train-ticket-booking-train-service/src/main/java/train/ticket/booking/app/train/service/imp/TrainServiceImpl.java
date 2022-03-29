@@ -18,6 +18,7 @@ import train.ticket.booking.app.train.entity.Train;
 import train.ticket.booking.app.train.exceptions.RouteIsNotFoundByDetailsException;
 import train.ticket.booking.app.train.exceptions.SeatNotAvaibleException;
 import train.ticket.booking.app.train.exceptions.TrainNotFoundByRouteException;
+import train.ticket.booking.app.train.exceptions.TrainNotFoundException;
 import train.ticket.booking.app.train.repo.client.RouteRepo;
 import train.ticket.booking.app.train.repo.client.TrainRepository;
 import train.ticket.booking.app.train.service.ITrainService;
@@ -34,14 +35,17 @@ public class TrainServiceImpl implements ITrainService{
 
 	@Override
 	public TrainDto findById(Integer trainId, Integer seatNumber) {
-		Train train = trainRepository.findById(trainId).get();
-		
-		return mappingDto(train,trainId,seatNumber);
+		Optional<Train> train = trainRepository.findById(trainId);
+		if(train.isPresent()) {
+			return mappingDto(train.get(),seatNumber);
+		}else {
+			throw new TrainNotFoundException("Train not found: " + trainId);
+		}
 	}
 
-	private TrainDto mappingDto(Train train,Integer trainId, Integer seatNumber) {
+	private TrainDto mappingDto(Train train, Integer seatNumber) {
 		
-		Optional<Seat> seat=Optional.of(train.getSeats().stream().filter(x->x.getNumber()==seatNumber && x.isAvailable()).findFirst().orElseThrow(()-> new SeatNotAvaibleException("Seat not available: " + seatNumber)));
+		Optional<Seat> seat=Optional.of(train.getSeats().stream().filter(x->x.getNumber().equals(seatNumber) && x.isAvailable()).findFirst().orElseThrow(()-> new SeatNotAvaibleException("Seat not available: " + seatNumber)));
 		
 		RouteDto route = new RouteDto();
 		route.setDestination(train.getRoute().getDestination());
@@ -64,7 +68,6 @@ public class TrainServiceImpl implements ITrainService{
 
 	@Override
 	public TrainSearchByDetsReponseDTO findBySearchDetails(String sourceT, String destinationT, String dateT) {
-		// TODO Auto-generated method stub
 		
 		Optional<Route> routeid = routeRepo.findBySearchDetails(sourceT, destinationT);
 		
@@ -83,9 +86,5 @@ public class TrainServiceImpl implements ITrainService{
 		
 		return trainResponseDto;
 	}
-
-	
-
-
 
 }

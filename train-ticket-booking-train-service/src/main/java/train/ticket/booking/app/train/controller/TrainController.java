@@ -36,6 +36,6 @@ public class TrainController {
 		TrainSearchByDetsReponseDTO trainSearchDto = trainService.findBySearchDetails(sourceT, destinationT, dateT);
 		
 		
-		return new ResponseEntity<TrainSearchByDetsReponseDTO>(trainSearchDto, HttpStatus.OK);
+		return new ResponseEntity<>(trainSearchDto, HttpStatus.OK);
 	}
 }
