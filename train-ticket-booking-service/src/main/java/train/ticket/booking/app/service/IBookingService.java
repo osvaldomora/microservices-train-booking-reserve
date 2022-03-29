@@ -9,7 +9,9 @@ import train.ticket.booking.app.dto.response.BookingResponseDto;
 
 public interface IBookingService {
 	
-	List<BookingResponseDto> bookTicket(BookingReqDto userReqDto) ;
+	List<BookingResponseDto> bookTicket(BookingReqDto userReqDto);
+	
+	List<BookingResponseDto> bookings(Integer idUser);
 
 	
 	 Integer getPort();
