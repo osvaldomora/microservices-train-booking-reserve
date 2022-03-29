@@ -16,6 +16,8 @@ import train.ticket.booking.app.train.entity.Route;
 import train.ticket.booking.app.train.entity.Seat;
 import train.ticket.booking.app.train.entity.Train;
 import train.ticket.booking.app.train.exceptions.RouteIsNotFoundByDetailsException;
+import train.ticket.booking.app.train.exceptions.SeatNotAvaibleException;
+import train.ticket.booking.app.train.exceptions.TrainNotFoundByRouteException;
 import train.ticket.booking.app.train.repo.client.RouteRepo;
 import train.ticket.booking.app.train.repo.client.TrainRepository;
 import train.ticket.booking.app.train.service.ITrainService;
@@ -38,8 +40,9 @@ public class TrainServiceImpl implements ITrainService{
 	}
 
 	private TrainDto mappingDto(Train train,Integer trainId, Integer seatNumber) {
-		//mandar exception
-		Seat  seat=train.getSeats().stream().filter(x->x.getNumber()==seatNumber && x.isAvailable()).findFirst().get();//lanzar excepcion si el asiento esta ocupado
+		
+		Optional<Seat> seat=Optional.of(train.getSeats().stream().filter(x->x.getNumber()==seatNumber && x.isAvailable()).findFirst().orElseThrow(()-> new SeatNotAvaibleException("Seat not available: " + seatNumber)));
+		
 		RouteDto route = new RouteDto();
 		route.setDestination(train.getRoute().getDestination());
 		route.setPrice("222");
@@ -47,8 +50,8 @@ public class TrainServiceImpl implements ITrainService{
 		route.setSource(train.getRoute().getSource());
 		
 		SeatDto seatDto = new SeatDto();
-		seatDto.setNumber(seat.getNumber().toString());
-		seatDto.setRow(seat.getRow().toString());
+		seatDto.setNumber(seat.get().getNumber().toString());
+		seatDto.setRow(seat.get().getRow().toString());
 		
 		TrainDto tr = new TrainDto();
 		tr.setModel(train.getModel());
@@ -69,12 +72,14 @@ public class TrainServiceImpl implements ITrainService{
 			throw new RouteIsNotFoundByDetailsException("No Route found with details: " + sourceT + ", " + destinationT);
 		}
 		
-		List<TrainSearchDto> trainSearchDto = trainRepository.findByRoute(routeid);
+		Optional<List<TrainSearchDto>> trainSearchDto = Optional.of(trainRepository.findByRoute(routeid));
 		
-		
+		if(trainSearchDto.isEmpty()) {
+			throw new TrainNotFoundByRouteException("No train with specified route found, source:" + sourceT + "  destination: "+ destinationT);
+		}
 		
 		TrainSearchByDetsReponseDTO trainResponseDto = new TrainSearchByDetsReponseDTO("Details fetch successfully", 200);
-		trainResponseDto.setTrainDetails(trainSearchDto);
+		trainResponseDto.setTrainDetails(trainSearchDto.get());
 		
 		return trainResponseDto;
 	}

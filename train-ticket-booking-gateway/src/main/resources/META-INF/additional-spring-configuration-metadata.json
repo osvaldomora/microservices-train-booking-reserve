@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "eureka.client.instance.prefer-ip-address",
+    "type": "java.lang.String",
+    "description": "A description for 'eureka.client.instance.prefer-ip-address'"
+  },
+  {
+    "name": "eureka.client.instance.hostname",
+    "type": "java.lang.String",
+    "description": "A description for 'eureka.client.instance.hostname'"
+  }
+]}

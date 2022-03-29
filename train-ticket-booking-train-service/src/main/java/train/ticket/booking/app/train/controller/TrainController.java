@@ -33,7 +33,7 @@ public class TrainController {
 				HttpStatus.OK);
 	}
 	//source, destination, date
-	@GetMapping(value = "train/search/{source}/{destination}/{date}", produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(value = "trains/search/{source}/{destination}/{date}", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<TrainSearchByDetsReponseDTO> searchTrainBySourceDestination(@Valid @PathVariable("source") String sourceT, 
 			@PathVariable("destination") String destinationT,
 			@PathVariable("date") String dateT){
