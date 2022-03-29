@@ -1,24 +1,21 @@
-package train.ticket.booking.app.user.dto;
-
-import java.time.LocalDate;
+package train.ticket.booking.app.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserData {
+@ToString
+public class TrainDataDto {
 	
-	private Integer userId;
-	private String name;
-	private String surname;
-	private LocalDate date;
 	private Integer trainId;
+	private Integer seatNumber;
 
 }
