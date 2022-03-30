@@ -45,7 +45,10 @@ public class TrainServiceImpl implements ITrainService{
 
 	private TrainDto mappingDto(Train train, Integer seatNumber) {
 		
-		Optional<Seat> seat=Optional.of(train.getSeats().stream().filter(x->x.getNumber().equals(seatNumber) && x.isAvailable()).findFirst().orElseThrow(()-> new SeatNotAvaibleException("Seat not available: " + seatNumber)));
+		Optional<Seat> seat=Optional.of(train.getSeats().stream()
+				.filter(x->x.getNumber().equals(seatNumber) && x.isAvailable())
+				.findFirst()
+				.orElseThrow(()-> new SeatNotAvaibleException("Seat not available: " + seatNumber)));
 		
 		RouteDto route = new RouteDto();
 		route.setDestination(train.getRoute().getDestination());
