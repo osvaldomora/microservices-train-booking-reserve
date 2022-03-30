@@ -4,7 +4,7 @@ package train.ticket.booking.app.user.service.imp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import train.ticket.booking.app.user.entity.User;
+import train.ticket.booking.app.user.dto.request.UserDTO;
 import train.ticket.booking.app.user.exception.UserNotFoundException;
 import train.ticket.booking.app.user.repo.UserRepo;
 import train.ticket.booking.app.user.service.IUserService;
@@ -18,14 +18,11 @@ public class UserServiceImpl implements IUserService{
 
 	
 	@Override
-	public User findByNameAndPassword(String name, String pass) {
+	public UserDTO findByNameAndPassword(String name, String pass) {
 		
-		User user=	userRepo.findByUsernameAndPassword(name, pass)
+		return userRepo.findByUsernameAndPassword(name, pass)
 				.orElseThrow(() -> new UserNotFoundException("User not found"));
 
-
-		user.setPassword("");
-		return user;
 	}
 
 

@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import train.ticket.booking.app.user.dto.request.UserDTO;
 import train.ticket.booking.app.user.dto.request.UserReq;
 import train.ticket.booking.app.user.entity.User;
 import train.ticket.booking.app.user.service.IUserService;
@@ -29,22 +30,18 @@ public class UserController {
 	int port;
 	
 	@GetMapping("/users/port")
-	public ResponseEntity<?> getPort() {
+	public ResponseEntity<Integer> getPort() {
 		return new ResponseEntity<>(port,
 				HttpStatus.OK);
 	}
 
 	@PostMapping(value = "/users", produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<User> users(@Valid @RequestBody UserReq userReq) {
+	public ResponseEntity<UserDTO> users(@Valid @RequestBody UserReq userReq) {
 		
-          System.out.println("in the server");
 		return new ResponseEntity<>(userService.findByNameAndPassword(userReq.getName(), userReq.getPassword()),
 				HttpStatus.OK);
 
 	}
-
-
-
 
 
 }

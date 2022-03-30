@@ -1,14 +1,9 @@
 package train.ticket.booking.app.user.service;
 
-import train.ticket.booking.app.user.entity.User;
+import train.ticket.booking.app.user.dto.request.UserDTO;
 
 public interface IUserService {
 	
-	 User findByNameAndPassword(String name, String pass) ;
-
-
-	 
-	 
-	 
+	UserDTO findByNameAndPassword(String name, String pass);
 
 }
