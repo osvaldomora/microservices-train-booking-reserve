@@ -6,7 +6,13 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-user-service"/>
+			<item value="C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-user"/>
 			<item value="C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-train-service"/>
+			<item value="C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service"/>
+			<item value="C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-passenger-service"/>
+			<item value="C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-gateway"/>
+			<item value="C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-eureka-server"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

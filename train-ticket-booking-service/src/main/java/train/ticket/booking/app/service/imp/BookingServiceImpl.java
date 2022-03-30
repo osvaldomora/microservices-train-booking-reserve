@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.circuitbreaker.CircuitBreaker;
+import org.springframework.cloud.client.circuitbreaker.CircuitBreakerFactory;
 import org.springframework.stereotype.Service;
 
 import lombok.extern.slf4j.Slf4j;
@@ -38,6 +40,9 @@ public class BookingServiceImpl implements IBookingService{
 	
 	@Autowired
 	BookingRepository bookingRepository;
+	
+	@Autowired
+	CircuitBreakerFactory circuitBreakerFactory;
 
 	@Override
 	public List<BookingResponseDto> bookTicket(BookingReqDto userReqDto) {
@@ -48,9 +53,13 @@ public class BookingServiceImpl implements IBookingService{
          user.setPassword(userReqDto.getPassword());
          
          final  UserClient  use;
+         CircuitBreaker circuitBreaker = circuitBreakerFactory.create("circuitbreaker");
+
 //         try {
          log.info("before call restFeign method");
-        	  use= userClientRestFeign.login(user);
+//        	  use= userClientRestFeign.login(user);
+        	  use=	 circuitBreaker.run(() -> userClientRestFeign.login(user), throwable -> getDefaultInfo());
+
         	  log.info("user:{}",use);
 //         }
 //         catch (FeignException e) {
@@ -62,11 +71,14 @@ public class BookingServiceImpl implements IBookingService{
 
 	         TrainDto trainDto=null;
 	         BookingResponseDto bookingRes=null;
+//	         CircuitBreaker circuitBreaker = circuitBreakerFactory.create("circuitbreaker");
 //	         try {
-	          trainDto=  trainClientRestFeign.trains(us.getTrain().getTrainId(), us.getTrain().getSeatNumber());
-//	         }catch (FeignException e) {
-//	        	 
-//	         }
+		          trainDto=  trainClientRestFeign.trains(us.getTrain().getTrainId(), us.getTrain().getSeatNumber());
+		          log.info("despues de obtener cliente feiggnr");
+//		         }catch (FeignException e) {
+//		        	throw new TrainNotFoundException("dddd") ;
+//		          trainDto=	 circuitBreaker.run(() -> trainClientRestFeign.trains(us.getTrain().getTrainId(), us.getTrain().getSeatNumber()), throwable -> getDefaultInfo());
+//		         }
 //	        System.out.println("the user Id value is:"+us.getUserId());
 	          Booking book= Booking.builder().trainId(us.getTrain().getTrainId()).userId(use.getUserId()).build(); 
 	          book=  bookingRepository.save(book);
@@ -83,6 +95,16 @@ public class BookingServiceImpl implements IBookingService{
      
 		
 		return lisBooking;
+	}
+
+	private UserClient getDefaultInfo() {
+		
+		log.info("Testing circuit breaker");
+		UserClient userDefault=new UserClient();
+		userDefault.setUsername("xxxx");
+		userDefault.setUserId(0);
+		userDefault.setEmail("xxxx");
+		return new UserClient();
 	}
 
 	@Override

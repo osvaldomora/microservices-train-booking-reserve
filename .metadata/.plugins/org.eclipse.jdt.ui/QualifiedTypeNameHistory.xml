@@ -6,4 +6,6 @@
     <fullyQualifiedTypeName name="train.ticket.booking.app.user.exception.UserNotFoundException"/>
     <fullyQualifiedTypeName name="antlr.collections.List"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.springframework.cloud.client.circuitbreaker.CircuitBreaker"/>
+    <fullyQualifiedTypeName name="train.ticket.booking.app.dto.client.train.TrainDto"/>
 </qualifiedTypeNameHistroy>
