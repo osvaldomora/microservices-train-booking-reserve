@@ -39,7 +39,7 @@ public class BookingController {
 	public ResponseEntity<List<BookingResponseDto>> users(@Valid @RequestBody BookingReqDto userReq) {
 		log.info("Entrando en users");
 		
-        
+       
 		return new ResponseEntity<>(iBookingService.bookTicket(userReq),HttpStatus.OK);
 		
 

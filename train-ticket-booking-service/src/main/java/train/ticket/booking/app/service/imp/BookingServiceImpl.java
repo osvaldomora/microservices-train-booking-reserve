@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import feign.FeignException;
 import lombok.extern.slf4j.Slf4j;
 import train.ticket.booking.app.dto.BookingReqDto;
 import train.ticket.booking.app.dto.UserClient;
@@ -16,6 +17,7 @@ import train.ticket.booking.app.dto.client.train.TrainDto;
 import train.ticket.booking.app.dto.client.train.passanger.BookingReqClientDto;
 import train.ticket.booking.app.dto.response.BookingResponseDto;
 import train.ticket.booking.app.entity.Booking;
+import train.ticket.booking.app.exception.TrainNotFoundException;
 import train.ticket.booking.app.repo.client.PassengerClientRest;
 import train.ticket.booking.app.repo.client.TrainClientRest;
 import train.ticket.booking.app.repo.client.UserClientRest;
@@ -62,11 +64,12 @@ public class BookingServiceImpl implements IBookingService{
 
 	         TrainDto trainDto=null;
 	         BookingResponseDto bookingRes=null;
-//	         try {
+	         try {
 	          trainDto=  trainClientRestFeign.trains(us.getTrain().getTrainId(), us.getTrain().getSeatNumber());
-//	         }catch (FeignException e) {
-//	        	 
-//	         }
+	          log.info("despues de obtener cliente feiggnr");
+	         }catch (FeignException e) {
+	        	throw new TrainNotFoundException("dddd") ;
+	         }
 //	        System.out.println("the user Id value is:"+us.getUserId());
 	          Booking book= Booking.builder().trainId(us.getTrain().getTrainId()).userId(use.getUserId()).build(); 
 	          book=  bookingRepository.save(book);

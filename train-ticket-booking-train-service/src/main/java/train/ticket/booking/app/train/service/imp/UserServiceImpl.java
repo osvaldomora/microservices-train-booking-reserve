@@ -27,7 +27,9 @@ public class UserServiceImpl implements ITrainService{
 	}
 
 	private TrainDto mappingDto(Train train,Integer trainId, Integer seatNumber) {
-		Seat  seat=train.getSeats().stream().filter(x->x.getNumber()==seatNumber && x.isAvailable()).findFirst().get();//lanzar excepcion si el asiento esta ocupado
+		System.out.println("before  exception");
+		Seat  seat=train.getSeats().stream().filter(x->x.getNumber()==seatNumber && x.isAvailable()).findFirst().get();//.orElseThrow(()->new RuntimeException("Error"));//TrainNotFound lanzar excepcion si el asiento esta ocupado
+		System.out.println("after exception");
 		RouteDto route = new RouteDto();
 		route.setDestination(train.getRoute().getDestination());
 		route.setPrice("222");

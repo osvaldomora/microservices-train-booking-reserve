@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import train.ticket.booking.app.train.dto.response.TrainDto;
 import train.ticket.booking.app.train.service.ITrainService;
+import train.ticket.booking.app.train.service.exception.TrainNotFoundException;
 
 
 @RestController
@@ -25,9 +26,9 @@ public class TrainController {
 
 
 	@GetMapping(value = "/trains/{train-id}/seats/{seat-number}", produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<TrainDto> trains(@Valid @PathVariable("train-id") Integer trainId,@PathVariable("seat-number") Integer seatNumber) {
+	public ResponseEntity<TrainDto> trains(@Valid @PathVariable("train-id") Integer trainId,@PathVariable("seat-number") Integer seatNumber) throws TrainNotFoundException {
 		System.out.println("Entrando en users");
-           
+//		throw new  TrainNotFoundException("Error") ;
 		return new ResponseEntity<>(userService.findById(trainId, seatNumber),
 				HttpStatus.OK);
 

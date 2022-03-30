@@ -7,14 +7,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import feign.FeignException;
-
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 	
-	@ExceptionHandler(UserNotFoundException.class)
-	public ResponseEntity<ErrorResponse> handleException(UserNotFoundException ex) {
+	@ExceptionHandler(TrainNotFoundException.class)
+	public ResponseEntity<ErrorResponse> handleException(TrainNotFoundException ex) {
 
 		System.out.println("ErrorResponse:" + ex.getMessage());
 		ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(), "s0040");
