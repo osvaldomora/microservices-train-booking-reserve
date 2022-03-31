@@ -11,7 +11,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import train.ticket.booking.app.user.dto.request.UserDTO;
@@ -21,7 +20,6 @@ import train.ticket.booking.app.user.service.IUserService;
 
 
 @RestController
-//@RequestMapping("/users/v1")
 public class UserController {
 	@Autowired
 	private IUserService userService;
@@ -43,5 +41,12 @@ public class UserController {
 
 	}
 
+	
+	@PostMapping(value = "/users", produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<User> usersSave(){
+		
+		return new ResponseEntity<>(userService.save(),HttpStatus.OK);
+
+	}
 
 }

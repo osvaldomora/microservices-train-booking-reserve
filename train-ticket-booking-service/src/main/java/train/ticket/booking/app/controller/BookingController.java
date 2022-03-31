@@ -30,7 +30,7 @@ public class BookingController {
 	private IBookingService iBookingService;
 
 	@GetMapping("/bookings/port")
-	public ResponseEntity<?> getPort() {
+	public ResponseEntity<Integer> getPort() {
 		return new ResponseEntity<>(iBookingService.getPort(),HttpStatus.OK);
 	}
 
@@ -38,8 +38,7 @@ public class BookingController {
 	@PostMapping(value = "/bookings", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<List<BookingResponseDto>> users(@Valid @RequestBody BookingReqDto userReq) {
 		log.info("Entrando en users");
-		
-        
+  
 		return new ResponseEntity<>(iBookingService.bookTicket(userReq),HttpStatus.OK);
 		
 

@@ -23,11 +23,9 @@ import lombok.Setter;
 public class Booking {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Integer BookingId;
+	private Integer bookingId;
 	private Integer trainId;
 	private Integer userId;
-//	private String surname;
-//	private LocalDate date;
 
 	
 	

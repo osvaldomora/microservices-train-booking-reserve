@@ -7,16 +7,17 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import feign.FeignException;
+import lombok.extern.slf4j.Slf4j;
 
 
 @RestControllerAdvice
+@Slf4j
 public class GlobalExceptionHandler {
 	
 	@ExceptionHandler(UserNotFoundException.class)
 	public ResponseEntity<ErrorResponse> handleException(UserNotFoundException ex) {
 
-		System.out.println("ErrorResponse:" + ex.getMessage());
+		log.info("ErrorResponse:" + ex.getMessage());
 		ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(), "s0040");
 		errorResponse.setDateTime(LocalDateTime.now());
 		return new ResponseEntity<>(errorResponse, HttpStatus.OK);

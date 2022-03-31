@@ -1,6 +1,5 @@
 package train.ticket.booking.app.service.imp;
 
-
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -9,6 +8,7 @@ import org.springframework.cloud.client.circuitbreaker.CircuitBreaker;
 import org.springframework.cloud.client.circuitbreaker.CircuitBreakerFactory;
 import org.springframework.stereotype.Service;
 
+import feign.FeignException;
 import lombok.extern.slf4j.Slf4j;
 import train.ticket.booking.app.dto.BookingReqDto;
 import train.ticket.booking.app.dto.UserClient;
@@ -18,120 +18,105 @@ import train.ticket.booking.app.dto.client.train.TrainDto;
 import train.ticket.booking.app.dto.client.train.passanger.BookingReqClientDto;
 import train.ticket.booking.app.dto.response.BookingResponseDto;
 import train.ticket.booking.app.entity.Booking;
+import train.ticket.booking.app.exception.TrainNotFoundException;
 import train.ticket.booking.app.repo.client.PassengerClientRest;
 import train.ticket.booking.app.repo.client.TrainClientRest;
 import train.ticket.booking.app.repo.client.UserClientRest;
 import train.ticket.booking.app.repository.BookingRepository;
 import train.ticket.booking.app.service.IBookingService;
 
-
 @Service
 @Slf4j
-public class BookingServiceImpl implements IBookingService{
+public class BookingServiceImpl implements IBookingService {
 
-	@Autowired(required=false)
+	@Autowired(required = false)
 	UserClientRest userClientRestFeign;
-	
-	@Autowired(required=false)
+
+	@Autowired(required = false)
 	TrainClientRest trainClientRestFeign;
-	
-	@Autowired(required=false)
+
+	@Autowired(required = false)
 	PassengerClientRest passengerClientRest;
-	
+
 	@Autowired
 	BookingRepository bookingRepository;
-	
+
 	@Autowired
-	CircuitBreakerFactory circuitBreakerFactory;
+	 CircuitBreakerFactory circuitBreakerFactory;
 
 	@Override
 	public List<BookingResponseDto> bookTicket(BookingReqDto userReqDto) {
-		
-		
-		 UserReq user = new UserReq();
-		 user.setName(userReqDto.getUsername());
-         user.setPassword(userReqDto.getPassword());
-         
-         final  UserClient  use;
-         CircuitBreaker circuitBreaker = circuitBreakerFactory.create("circuitbreaker");
 
-//         try {
-         log.info("before call restFeign method");
-//        	  use= userClientRestFeign.login(user);
-        	  use=	 circuitBreaker.run(() -> userClientRestFeign.login(user), throwable -> getDefaultInfo());
+		UserReq user = new UserReq();
+		user.setName(userReqDto.getUsername());
+		user.setPassword(userReqDto.getPassword());
 
-        	  log.info("user:{}",use);
-//         }
-//         catch (FeignException e) {
-        	 
-//			throw new UserNotFoundException(500,"user not fouded");
-//		}
-         
-		 return userReqDto.getUsersData().stream().map(us->{
+		/**
+		 * A User is created by default if its is not registed yet
+		 */
+		final UserClient use;
+		CircuitBreaker circuitBreaker = circuitBreakerFactory.create("circuitbreaker");
+		use = circuitBreaker.run(() -> userClientRestFeign.login(user), throwable -> getDefaultInfo());
+		log.info("user:{}", use);
+        
+		/*
+		 * we mapped the list of the request than contains passanger´s data
+		 */
+		return userReqDto.getUsersData().stream().map(us -> {
 
-	         TrainDto trainDto=null;
-	         BookingResponseDto bookingRes=null;
-//	         CircuitBreaker circuitBreaker = circuitBreakerFactory.create("circuitbreaker");
-//	         try {
-		          trainDto=  trainClientRestFeign.trains(us.getTrain().getTrainId(), us.getTrain().getSeatNumber());
-		          log.info("despues de obtener cliente feiggnr");
-//		         }catch (FeignException e) {
-//		        	throw new TrainNotFoundException("dddd") ;
-//		          trainDto=	 circuitBreaker.run(() -> trainClientRestFeign.trains(us.getTrain().getTrainId(), us.getTrain().getSeatNumber()), throwable -> getDefaultInfo());
-//		         }
-//	        System.out.println("the user Id value is:"+us.getUserId());
-	          Booking book= Booking.builder().trainId(us.getTrain().getTrainId()).userId(use.getUserId()).build(); 
-	          book=  bookingRepository.save(book);
-	          //I need to insert data in tha api pasanger, booking id,username,surname,seatId
-	          bookingRes =  BookingResponseDto.builder().name(us.getUsername())
-	        		  .surname(us.getSurname()).trainDto(trainDto).build();
-	          passengerClientRest.passanger(BookingReqClientDto.builder().bookingId(book.getBookingId())
-	        		  .userId(use.getUserId())
-	        		  .seatId(us.getTrain().getSeatNumber())
-	        		  .name(bookingRes.getName())
-	        		  .surname(bookingRes.getSurname()).build());
-	         return bookingRes;
-		 }).collect(Collectors.toList());
-     
+			TrainDto trainDto = null;
+			BookingResponseDto bookingRes = null;
+			try {//I need to chose the train 
+				trainDto = trainClientRestFeign.trains(us.getTrain().getTrainId(), us.getTrain().getSeatNumber());
+				log.error("data was not founded");
+			} catch (FeignException e) {
+				throw new TrainNotFoundException("train not was founded");
+			}
+
+			Booking book = Booking.builder().trainId(us.getTrain().getTrainId()).userId(use.getUserId()).build();
+			book = bookingRepository.save(book);
+			//Response Data is created
+			bookingRes = BookingResponseDto.builder().name(us.getUsername()).surname(us.getSurname()).trainDto(trainDto)
+					.build();
+			//Pasanger is saved
+			passengerClientRest.passanger(BookingReqClientDto.builder().bookingId(book.getBookingId())
+					.userId(use.getUserId()).seatId(us.getTrain().getSeatNumber()).name(bookingRes.getName())
+					.surname(bookingRes.getSurname()).build());
+			return bookingRes;
+		}).collect(Collectors.toList());
+
 	}
 
 	private UserClient getDefaultInfo() {
-		
+
 		log.info("Testing circuit breaker");
-		UserClient userDefault=new UserClient();
-		userDefault.setUsername("xxxx");
-		userDefault.setUserId(0);
-		userDefault.setEmail("xxxx");
-		return new UserClient();
+
+		return userClientRestFeign.save();
 	}
 
 	@Override
 	public Integer getPort() {
-		
+
 		return userClientRestFeign.port();
 	}
 
 	@Override
 	public List<BookingResponseDto> bookings(Integer idUser) {
-		log.info("idUser"+idUser);
-		List<PassengerClient> listP=passengerClientRest.passanger(idUser);
-		log.info("PassengerClient"+listP.size());
-		
-		return listP.stream().map(passenger->{ 
-			Booking booking=bookingRepository.findById(passenger.getBookingId()).orElseThrow(()-> new RuntimeException());
+
+		log.info("idUser" + idUser);
+		List<PassengerClient> listP = passengerClientRest.passanger(idUser);
+		log.info("PassengerClient" + listP.size());
+		return listP.stream().map(passenger -> {
+			Booking booking = bookingRepository.findById(passenger.getBookingId())
+					.orElseThrow(() -> new RuntimeException());
+
 			
-			log.info("brrajinG");
-			TrainDto trainDto=  trainClientRestFeign.trains(booking.getTrainId(), passenger.getSeatId());
-			return BookingResponseDto.builder().name(passenger.getName()).surname(passenger.getSurname()).trainDto(trainDto).build();
-			
+			TrainDto trainDto = trainClientRestFeign.trains(booking.getTrainId(), passenger.getSeatId());
+
+			return BookingResponseDto.builder().name(passenger.getName()).surname(passenger.getSurname())
+					.trainDto(trainDto).build();
 		}).collect(Collectors.toList());
-		
+
 	}
-	
-
-
-
-
-
 
 }

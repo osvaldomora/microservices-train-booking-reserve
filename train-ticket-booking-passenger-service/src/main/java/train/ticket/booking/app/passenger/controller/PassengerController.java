@@ -37,6 +37,7 @@ public class PassengerController {
 
 	@PostMapping(value = "/passengers", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Void> passengers(@Valid @RequestBody BookingReqDto userReq) {
+
 		iPassengerService.savePassenger(userReq);
         
 		return new ResponseEntity<>(HttpStatus.NO_CONTENT);

@@ -11,8 +11,11 @@ import train.ticket.booking.app.dto.UserReq;
 @FeignClient(name = "USER-SERVICE")
 public interface UserClientRest {
 	
-	@PostMapping("/users")
+	@PostMapping("/users/login")
 	public UserClient login(UserReq user);
+	
+	@PostMapping("/users")
+	public UserClient save();
 	
 	@GetMapping("/users/port")
 	public int port();

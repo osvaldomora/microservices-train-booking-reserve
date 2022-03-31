@@ -9,7 +9,8 @@ public class SeatDto implements Serializable
 
     private String number;
     private String row;
-    private static final long serialVersionUID = -5079141697556060340L;
+    private static final  long serialVersionUID = -5079141697556060340L;
+
 
     public String getNumber() {
         return number;
