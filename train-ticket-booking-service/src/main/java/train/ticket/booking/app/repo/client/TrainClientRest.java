@@ -4,7 +4,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import train.ticket.booking.app.dto.client.TrainDto;
+import train.ticket.booking.app.dto.client.train.TrainDto;
 
 
 @FeignClient(name = "train-service")

@@ -24,7 +24,9 @@ public class Passenger {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer PassengerId;
+	private Integer userId;
 	private Integer BookingId;
+	private Integer seatId;
 	private String name;
 	private String surname;
 	
