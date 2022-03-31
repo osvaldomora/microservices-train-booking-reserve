@@ -78,16 +78,17 @@ public class TrainServiceImpl implements ITrainService{
 			throw new RouteIsNotFoundByDetailsException("No Route found with details: " + sourceT + ", " + destinationT);
 		}
 		
-		Optional<List<TrainSearchDto>> trainSearchDto = Optional.of(trainRepository.findByRoute(routeid));
+		Optional<List<TrainSearchDto>> trainSearchDto = Optional.ofNullable(Optional.of(trainRepository.findByRoute(routeid)).orElseThrow(()-> new TrainNotFoundByRouteException("No train with specified route found, source:" + sourceT + "  destination: "+ destinationT)));
 		
-		if(trainSearchDto.isEmpty()) {
-			throw new TrainNotFoundByRouteException("No train with specified route found, source:" + sourceT + "  destination: "+ destinationT);
+		if(trainSearchDto.isPresent()) {
+			TrainSearchByDetsReponseDTO trainResponseDto = new TrainSearchByDetsReponseDTO("Details fetch successfully", 200);
+			trainResponseDto.setTrainDetails(trainSearchDto.get());
+			
+			return trainResponseDto;
 		}
 		
-		TrainSearchByDetsReponseDTO trainResponseDto = new TrainSearchByDetsReponseDTO("Details fetch successfully", 200);
-		trainResponseDto.setTrainDetails(trainSearchDto.get());
+		return null;
 		
-		return trainResponseDto;
 	}
 
 }
