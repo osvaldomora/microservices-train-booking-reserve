@@ -55,6 +55,7 @@ public class TrainServiceImpl implements ITrainService{
 		route.setPrice("222");
 		route.setRouteId(train.getRoute().getRouteId().toString());
 		route.setSource(train.getRoute().getSource());
+		route.setDepartureDate(train.getRoute().getDepartureDate());
 		
 		SeatDto seatDto = new SeatDto();
 		seatDto.setNumber(seat.get().getNumber().toString());
