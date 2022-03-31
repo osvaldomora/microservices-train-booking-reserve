@@ -12,7 +12,7 @@ public class TrainDto implements Serializable {
     private String model;
     private RouteDto route;
     private SeatDto seat;
-    private final static long serialVersionUID = 2504300653763754526L;
+    private static final  long serialVersionUID = 2504300653763754526L;
 
     public String getTrainId() {
         return trainId;

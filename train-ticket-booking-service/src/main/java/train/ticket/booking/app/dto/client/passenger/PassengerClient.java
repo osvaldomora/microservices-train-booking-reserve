@@ -17,9 +17,9 @@ import lombok.Setter;
 @NoArgsConstructor
 public class PassengerClient {
 
-	private Integer PassengerId;
+	private Integer passengerId;
 	private Integer userId;
-	private Integer BookingId;
+	private Integer bookingId;
 	private Integer seatId;
 	private String name;
 	private String surname;

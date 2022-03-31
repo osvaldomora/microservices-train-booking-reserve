@@ -18,14 +18,22 @@ public class UserServiceImpl implements IUserService{
 
 	
 	@Override
-	public User findByNameAndPassword(String name, String pass) {
-		
+	public User findByNameAndPassword(String name, String pass) {	
 		User user=	userRepo.findByUsernameAndPassword(name, pass)
 				.orElseThrow(() -> new UserNotFoundException("User not found"));
-
+		
 
 		user.setPassword("");
 		return user;
+	}
+
+
+	@Override
+	public User save() {
+		User user = new User();
+		user.setUsername("XXXX");
+		user.setEmail("XXXX");
+			return userRepo.save(user);
 	}
 
 
