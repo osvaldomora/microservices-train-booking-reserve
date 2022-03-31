@@ -1,6 +1,5 @@
 package train.ticket.booking.app.train.controller;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -13,7 +12,6 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 import train.ticket.booking.app.train.dto.TrainSearchByDetsReponseDTO;
 import train.ticket.booking.app.train.dto.response.TrainDto;
@@ -26,7 +24,7 @@ class TrainControllerTest {
 	@MockBean
 	private ITrainService trainService;
 	
-	private ObjectMapper objectMapper;
+	
 	private TrainDto trainDto;
 	private TrainSearchByDetsReponseDTO trainSearchDto;
 	
