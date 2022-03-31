@@ -33,7 +33,7 @@ public class UserController {
 				HttpStatus.OK);
 	}
 
-	@PostMapping(value = "/users", produces = MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping(value = "/users/login", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<UserDTO> users(@Valid @RequestBody UserReq userReq) {
 		
 		return new ResponseEntity<>(userService.findByNameAndPassword(userReq.getName(), userReq.getPassword()),

@@ -12,14 +12,13 @@
 	<groupId>train.ticket.booking.app.user</groupId>
 	<artifactId>train-ticket-booking-train-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>train-ticket-booking-user</name>
+	<name>train-ticket-booking-train-service</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
 		<spring-cloud.version>2021.0.1</spring-cloud.version>
-			<jacoco.version>0.8.3</jacoco.version>
+		<jacoco.version>0.8.3</jacoco.version>
 		<sonar.jacoco.reportPaths>${project.basedir}/target/coverage-reports/jacoco-unit.exec</sonar.jacoco.reportPaths>
-		
 	</properties>
 	<dependencies>
 

@@ -45,7 +45,7 @@ class UserControllerTest {
 	void usersLoginTest() throws Exception {
 		when(userService.findByNameAndPassword("random", "123")).thenReturn(userdto);
 		
-		mockMvc.perform(post("/users/")
+		mockMvc.perform(post("/users/login")
 				.contentType(MediaType.APPLICATION_JSON)
 				.content(objectMapper.writeValueAsString(userReq)))
 		.andExpect(status().is2xxSuccessful())
