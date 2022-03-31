@@ -11,16 +11,16 @@ spring:
   cloud:
     gateway:
       routes:
-      #- id: booking-service
-      #  uri:
-      #    lb://booking-service
-      #  predicates:
-      #  - Path=/bookings/**
+      - id: booking-service
+        uri:
+          lb://booking-service
+        predicates:
+        - Path=/bookings/**
       - id: train-service
         uri: lb://train-service
         predicates:
         - Path=/trains/**
-      #- id: user-service
-      #  uri: lb://user-service
-      #  predicates:
-      #  - Path=/users/**         
+      - id: user-service
+        uri: lb://user-service
+        predicates:
+        - Path=/users/**         
