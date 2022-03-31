@@ -110,6 +110,8 @@ class TrainServiceImplTest {
 		assertThrows(TrainNotFoundException.class, () -> trainServiceImpl.findById(0, 1));
 	}
 	
+	
+	
 	@Test
 	void findBySearchDetailsTest() {
 		when(routeRepo.findBySearchDetails("cancun", "oaxaca")).thenReturn(Optional.of(route));
