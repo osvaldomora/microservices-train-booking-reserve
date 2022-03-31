@@ -19,8 +19,8 @@ public class UserServiceImpl implements IUserService{
 	
 	@Override
 	public User findByNameAndPassword(String name, String pass) {	
-		User user=	userRepo.findByUsernameAndPassword(name, pass)
-				.orElseThrow(() -> new UserNotFoundException("User not found"));
+		User user=	userRepo.findByUsernameAndPassword(name, pass).get();
+//				.orElseThrow(() -> new UserNotFoundException("User not found"));
 		
 
 		user.setPassword("");
@@ -33,6 +33,7 @@ public class UserServiceImpl implements IUserService{
 		User user = new User();
 		user.setUsername("XXXX");
 		user.setEmail("XXXX");
+		user.setUserId(10);
 			return userRepo.save(user);
 	}
 

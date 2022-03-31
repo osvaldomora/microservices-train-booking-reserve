@@ -109,7 +109,7 @@ public class BookingServiceImpl implements IBookingService {
 			Booking booking = bookingRepository.findById(passenger.getBookingId())
 					.orElseThrow(() -> new RuntimeException());
 
-			log.info("brrajinG");
+			
 			TrainDto trainDto = trainClientRestFeign.trains(booking.getTrainId(), passenger.getSeatId());
 
 			return BookingResponseDto.builder().name(passenger.getName()).surname(passenger.getSurname())

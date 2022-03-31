@@ -35,7 +35,8 @@ public class UserController {
 	@PostMapping(value = "/users/login", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<User> users(@Valid @RequestBody UserReq userReq) {
 		
-         
+//		System.out.println("i AM THE SERVER");
+//	     throw new RuntimeException();
 		return new ResponseEntity<>(userService.findByNameAndPassword(userReq.getName(), userReq.getPassword()),
 				HttpStatus.OK);
 
@@ -44,7 +45,7 @@ public class UserController {
 	
 	@PostMapping(value = "/users", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<User> usersSave(){
-     
+		
 		return new ResponseEntity<>(userService.save(),HttpStatus.OK);
 
 	}
