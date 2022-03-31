@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -21,6 +22,7 @@ import train.ticket.booking.app.train.dto.response.TrainSearchDto;
 import train.ticket.booking.app.train.entity.Route;
 import train.ticket.booking.app.train.entity.Seat;
 import train.ticket.booking.app.train.entity.Train;
+import train.ticket.booking.app.train.exceptions.TrainNotFoundException;
 import train.ticket.booking.app.train.repo.client.RouteRepo;
 import train.ticket.booking.app.train.repo.client.TrainRepository;
 import train.ticket.booking.app.train.service.imp.TrainServiceImpl;
@@ -39,9 +41,9 @@ class TrainServiceImplTest {
 	Seat seat;
 	RouteDto routeDto;
 	SeatDto seatDto;
-	//TrainDto trainDto;
 	TrainSearchDto trainSearchDto;
 	TrainSearchByDetsReponseDTO res;
+	
 	@BeforeEach
 	void setUp() {
 		train = new Train();
@@ -86,6 +88,7 @@ class TrainServiceImplTest {
 	}
 	
 	@Test
+	@DisplayName("Find train id: positive")
 	void findByIdTest() {
 		when(trainRepository.findById(1)).thenReturn(Optional.of(train));
 		
@@ -98,6 +101,13 @@ class TrainServiceImplTest {
 		assertNotNull(trainDto);
 		assertEquals("1", trainDto.getTrainId());
 		
+	}
+	@Test
+	@DisplayName("Find train id: negative")
+	void findByIdTestNegative() {
+		when(trainRepository.findById(1)).thenReturn(Optional.empty());
+		
+		assertThrows(TrainNotFoundException.class, () -> trainServiceImpl.findById(0, 1));
 	}
 	
 	@Test
