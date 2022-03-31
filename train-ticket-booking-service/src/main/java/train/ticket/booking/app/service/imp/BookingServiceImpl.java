@@ -63,7 +63,7 @@ public class BookingServiceImpl implements IBookingService{
         	  log.info("user:{}",use);
 //         }
 //         catch (FeignException e) {
-        	 System.out.println("into feign exception");
+        	 
 //			throw new UserNotFoundException(500,"user not fouded");
 //		}
          

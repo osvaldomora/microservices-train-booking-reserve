@@ -30,20 +30,16 @@ public class PassengerController {
 	private IPassengerService iPassengerService;
 
 	@GetMapping("/passengers/port")
-	public ResponseEntity<?> getPort() {
+	public ResponseEntity<Integer> getPort() {
 		return new ResponseEntity<>(iPassengerService.getPort(),HttpStatus.OK);
 	}
 
 
 	@PostMapping(value = "/passengers", produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<?> passengers(@Valid @RequestBody BookingReqDto userReq) {
-		System.out.println("Entrando en users");
+	public ResponseEntity<Void> passengers(@Valid @RequestBody BookingReqDto userReq) {
 		iPassengerService.savePassenger(userReq);
         
 		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-		
-	
-
 	}
 	
 	@GetMapping("/passengers/{idUser}")

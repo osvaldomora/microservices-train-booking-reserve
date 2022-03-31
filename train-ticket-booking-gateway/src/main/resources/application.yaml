@@ -12,12 +12,7 @@ spring:
     gateway:
       routes:
       - id: booking-service
-<<<<<<< HEAD
-        uri:
-          lb://booking-service
-=======
         uri: lb://booking-service
->>>>>>> osvaldox
         predicates:
         - Path=/bookings/**
       - id: train-service
@@ -27,12 +22,9 @@ spring:
       - id: user-service
         uri: lb://user-service
         predicates:
-<<<<<<< HEAD
         - Path=/users/**         
-=======
-        - Path=/users/**  
-      - id: user-service
+      - id: passenger-service
         uri: lb://passenger-service
         predicates:
         - Path=/passengers/**        
->>>>>>> osvaldox
+

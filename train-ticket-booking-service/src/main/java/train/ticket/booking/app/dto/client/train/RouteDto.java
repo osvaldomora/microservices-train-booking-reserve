@@ -12,7 +12,7 @@ public class RouteDto implements Serializable
     private String destination;
     private String source;
     private String price;
-    private final static long serialVersionUID = -5353745690337922637L;
+    private static final long serialVersionUID = -5353745690337922637L;
 
     public String getRouteId() {
         return routeId;
