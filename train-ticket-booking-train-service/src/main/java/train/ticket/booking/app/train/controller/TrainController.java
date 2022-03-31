@@ -25,7 +25,6 @@ public class TrainController {
 	@GetMapping(value = "/trains/{train-id}/seats/{seat-number}", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<TrainDto> trains(@Valid @PathVariable("train-id") Integer trainId,
 			@PathVariable("seat-number") Integer seatNumber) {
-		System.out.println("Entrando en users");
            
 		return new ResponseEntity<>(trainService.findById(trainId, seatNumber),
 				HttpStatus.OK);
