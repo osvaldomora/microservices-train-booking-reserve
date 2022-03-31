@@ -67,7 +67,7 @@ public class BookingServiceImpl implements IBookingService{
 //			throw new UserNotFoundException(500,"user not fouded");
 //		}
          
-		 List<BookingResponseDto> lisBooking = 	 userReqDto.getUsersData().stream().map(us->{
+		 return userReqDto.getUsersData().stream().map(us->{
 
 	         TrainDto trainDto=null;
 	         BookingResponseDto bookingRes=null;
@@ -93,8 +93,6 @@ public class BookingServiceImpl implements IBookingService{
 	         return bookingRes;
 		 }).collect(Collectors.toList());
      
-		
-		return lisBooking;
 	}
 
 	private UserClient getDefaultInfo() {
@@ -118,18 +116,16 @@ public class BookingServiceImpl implements IBookingService{
 		log.info("idUser"+idUser);
 		List<PassengerClient> listP=passengerClientRest.passanger(idUser);
 		log.info("PassengerClient"+listP.size());
-		 List<BookingResponseDto> response =	listP.stream().map(passenger->{ 
+		
+		return listP.stream().map(passenger->{ 
 			Booking booking=bookingRepository.findById(passenger.getBookingId()).orElseThrow(()-> new RuntimeException());
 			
 			log.info("brrajinG");
 			TrainDto trainDto=  trainClientRestFeign.trains(booking.getTrainId(), passenger.getSeatId());
-			BookingResponseDto br= BookingResponseDto.builder().name(passenger.getName()).surname(passenger.getSurname()).trainDto(trainDto).build();
-			return br;
+			return BookingResponseDto.builder().name(passenger.getName()).surname(passenger.getSurname()).trainDto(trainDto).build();
+			
 		}).collect(Collectors.toList());
 		
-
-		
-		return response;
 	}
 	
 
