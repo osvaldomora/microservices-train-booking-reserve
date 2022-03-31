@@ -2,13 +2,14 @@
 package train.ticket.booking.app.train.dto.response;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 
 
 public class RouteDto implements Serializable
 {
 
     private String routeId;
-    private String departureDate;
+    private LocalDate departureDate;
     private String destination;
     private String source;
     private String price;
@@ -22,11 +23,11 @@ public class RouteDto implements Serializable
         this.routeId = routeId;
     }
 
-    public String getDepartureDate() {
+    public LocalDate getDepartureDate() {
         return departureDate;
     }
 
-    public void setDepartureDate(String departureDate) {
+    public void setDepartureDate(LocalDate departureDate) {
         this.departureDate = departureDate;
     }
 

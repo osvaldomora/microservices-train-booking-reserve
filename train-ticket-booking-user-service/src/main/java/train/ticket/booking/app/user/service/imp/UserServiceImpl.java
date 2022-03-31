@@ -32,7 +32,7 @@ public class UserServiceImpl implements IUserService{
 		User user = new User();
 		user.setUsername("XXXX");
 		user.setEmail("XXXX");
-		user.setUserId(10);
+//		user.setUserId(10);
 			return userRepo.save(user);
 	}
 

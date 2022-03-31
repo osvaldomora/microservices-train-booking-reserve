@@ -19,7 +19,7 @@ public class Route {
 	private Integer routeId;
 	private String source;
 	private String destination;
-	private LocalDate DepartureDate;
+	private LocalDate departureDate;
 	private String price;
 	
 	@OneToMany(mappedBy = "route")
@@ -51,11 +51,11 @@ public class Route {
 
 
 	public LocalDate getDepartureDate() {
-		return DepartureDate;
+		return departureDate;
 	}
 
 	public void setDepartureDate(LocalDate departureDate) {
-		DepartureDate = departureDate;
+		this.departureDate = departureDate;
 	}
 
 	public List<Train> getTrains() {

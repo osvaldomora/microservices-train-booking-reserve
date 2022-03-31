@@ -9,7 +9,6 @@ public class TrainSearchByDetsReponseDTO extends ResponseDTO{
 
 	public TrainSearchByDetsReponseDTO(String message, int statusCode) {
 		super(message, statusCode);
-		// TODO Auto-generated constructor stub
 	}
 	private List<TrainSearchDto> trainDetails = new ArrayList<>();
 	

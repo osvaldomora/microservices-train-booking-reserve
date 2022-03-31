@@ -48,13 +48,14 @@ public class TrainServiceImpl implements ITrainService{
 		Optional<Seat> seat=Optional.of(train.getSeats().stream()
 				.filter(x->x.getNumber().equals(seatNumber) && x.isAvailable())
 				.findFirst()
-				.orElseThrow(()-> new SeatNotAvaibleException("Seat not available: " + seatNumber)));
+				.orElseThrow(()-> new SeatNotAvaibleException("Seat not available: " + seatNumber)));//SeatNotAvaibleException("Seat not available: " + seatNumber)
 		
 		RouteDto route = new RouteDto();
 		route.setDestination(train.getRoute().getDestination());
 		route.setPrice("222");
 		route.setRouteId(train.getRoute().getRouteId().toString());
 		route.setSource(train.getRoute().getSource());
+		route.setDepartureDate(train.getRoute().getDepartureDate());
 		
 		SeatDto seatDto = new SeatDto();
 		seatDto.setNumber(seat.get().getNumber().toString());
