@@ -1,6 +1,7 @@
 package train.ticket.booking.app.user.service.imp;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
 import java.util.Optional;
@@ -45,6 +46,21 @@ class UserServiceImplTest {
 		
 		assertNotNull(userDtoRes);
 		assertEquals(userDtoRes.getUsername(), user.getUsername());
+		
+	}
+	
+	@Test
+	void saveTest() {
+		when(userRepo.save(any(User.class))).thenAnswer(i -> {
+			User user = i.getArgument(0);
+			user.setUserId(2);
+			return user;
+		});
+		User user2 = userServiceImpl.save();
+		
+		assertNotNull(user2);
+		assertEquals(2, user2.getUserId());
+		
 		
 	}
 

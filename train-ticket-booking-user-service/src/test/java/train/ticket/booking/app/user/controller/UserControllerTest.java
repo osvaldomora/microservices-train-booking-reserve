@@ -18,6 +18,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import train.ticket.booking.app.user.dto.request.UserDTO;
 import train.ticket.booking.app.user.dto.request.UserReq;
+import train.ticket.booking.app.user.entity.User;
 import train.ticket.booking.app.user.service.IUserService;
 
 @WebMvcTest(UserController.class)
@@ -30,6 +31,7 @@ class UserControllerTest {
 	private UserReq userReq;
 	private UserDTO userdto;
 	ObjectMapper objectMapper;
+	private User user;
 	
 	@BeforeEach
 	void setUp() {
@@ -37,6 +39,9 @@ class UserControllerTest {
 		userReq = new UserReq();
 		userReq.setName("random");
 		userReq.setPassword("123");
+		
+		user = new User();
+		user.setUserId(1);
 		
 		objectMapper = new ObjectMapper();
 	}
@@ -51,6 +56,15 @@ class UserControllerTest {
 		.andExpect(status().is2xxSuccessful())
 		.andExpect(jsonPath("$.username").value("random"));
 		//verify(userService).findByNameAndPassword(userReq.getName(), userReq.getPassword());
+	}
+	
+	@Test
+	void usersSave() throws Exception {
+		when(userService.save()).thenReturn(user);
+		
+		mockMvc.perform(post("/users/")
+				.contentType(MediaType.APPLICATION_JSON))
+		.andExpect(status().is2xxSuccessful());
 	}
 
 }
