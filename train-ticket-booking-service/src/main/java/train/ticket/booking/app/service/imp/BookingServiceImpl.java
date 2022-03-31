@@ -69,15 +69,18 @@ public class BookingServiceImpl implements IBookingService {
 			try {//I need to chose the train 
 				trainDto = trainClientRestFeign.trains(us.getTrain().getTrainId(), us.getTrain().getSeatNumber());
 				log.error("data was not founded");
-			} catch (FeignException e) {
-				throw new TrainNotFoundException("train not was founded");
+			} catch (FeignException e) {//break
+				log.info("into exception");
+				return BookingResponseDto.builder().name(us.getUsername()).success(false)
+						.message("The seat number "+ us.getTrain().getSeatNumber()+ " is already occupied").build();
+//				throw new TrainNotFoundException("train not was founded");
 			}
 
 			Booking book = Booking.builder().trainId(us.getTrain().getTrainId()).userId(use.getUserId()).build();
 			book = bookingRepository.save(book);
 			//Response Data is created
 			bookingRes = BookingResponseDto.builder().name(us.getUsername()).surname(us.getSurname()).trainDto(trainDto)
-					.build();
+					.success(true).build();
 			//Pasanger is saved
 			passengerClientRest.passanger(BookingReqClientDto.builder().bookingId(book.getBookingId())
 					.userId(use.getUserId()).seatId(us.getTrain().getSeatNumber()).name(bookingRes.getName())
