@@ -55,8 +55,10 @@ public class BookingServiceImpl implements IBookingService {
 		 * A User is created by default if its is not registed yet
 		 */
 		final UserClient use;
-		CircuitBreaker circuitBreaker = circuitBreakerFactory.create("circuitbreaker");
+	/*	CircuitBreaker circuitBreaker = circuitBreakerFactory.create("circuitbreaker");
 		use = circuitBreaker.run(() -> userClientRestFeign.login(user), throwable -> getDefaultInfo());
+	*/
+		use=userClientRestFeign.login(user);
 		log.info("user:{}", use);
         
 		/*
@@ -111,7 +113,7 @@ public class BookingServiceImpl implements IBookingService {
 		log.info("PassengerClient" + listP.size());
 		return listP.stream().map(passenger -> {
 			Booking booking = bookingRepository.findById(passenger.getBookingId())
-					.orElseThrow(() -> new RuntimeException());
+					.orElseThrow(() -> new TrainNotFoundException("BookingId not was founded"));
 
 			
 			TrainDto trainDto = trainClientRestFeign.trains(booking.getTrainId(), passenger.getSeatId());
