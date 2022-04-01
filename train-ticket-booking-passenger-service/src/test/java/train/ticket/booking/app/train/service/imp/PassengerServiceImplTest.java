@@ -1,6 +1,10 @@
 package train.ticket.booking.app.train.service.imp;
 
+import static com.google.code.beanmatchers.BeanMatchers.hasValidBeanConstructor;
+import static com.google.code.beanmatchers.BeanMatchers.hasValidGettersAndSetters;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.hamcrest.CoreMatchers.allOf;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
@@ -18,6 +22,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import train.ticket.booking.app.passenger.dto.BookingReqDto;
 import train.ticket.booking.app.passenger.entity.Passenger;
+import train.ticket.booking.app.passenger.exception.ErrorDto;
 import train.ticket.booking.app.passenger.repository.PassengerRepository;
 import train.ticket.booking.app.passenger.service.imp.PassengerServiceImpl;
 
@@ -50,7 +55,17 @@ class PassengerServiceImplTest {
 		
 	}
 	
-
+	@Test()
+	void savePassenger(){
+		when(passengerRepository.save(any(Passenger.class))).thenAnswer(i -> {
+			Passenger passenger = i.getArgument(0);
+			passenger.setPassengerId(2);
+			return passenger;
+		});
+		
+		assertEquals(2, passengerRepository.save(passenger).getPassengerId());
+		
+	}
 	
 	@Test
 	void getPassengersTest() {
@@ -63,6 +78,15 @@ class PassengerServiceImplTest {
 
 	}
 	
-	
+	@Test
+	void dtoValids() {
+		assertNotNull(new BookingReqDto());
+		assertNotNull(new ErrorDto());
+		
+		assertThat(Passenger.class, allOf(hasValidBeanConstructor(), hasValidGettersAndSetters()));
+		assertThat(BookingReqDto.class, allOf(hasValidBeanConstructor(), hasValidGettersAndSetters()));
+		assertThat(ErrorDto.class, allOf(hasValidBeanConstructor(), hasValidGettersAndSetters()));
+		
+	}
 
 }

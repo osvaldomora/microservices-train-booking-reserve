@@ -16,7 +16,6 @@ public class GlobalExceptionHandler {
 	@ExceptionHandler(UserNotFoundException.class)
 	public ResponseEntity<ErrorResponse> handleException(UserNotFoundException ex) {
 
-		System.out.println("ErrorResponse:" + ex.getMessage());
 		ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(), "s0040");
 		errorResponse.setDateTime(LocalDateTime.now());
 		return new ResponseEntity<>(errorResponse, HttpStatus.OK);

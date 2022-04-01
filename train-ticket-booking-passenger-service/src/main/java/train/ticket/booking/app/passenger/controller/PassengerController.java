@@ -14,15 +14,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import lombok.extern.slf4j.Slf4j;
 import train.ticket.booking.app.passenger.dto.BookingReqDto;
 import train.ticket.booking.app.passenger.entity.Passenger;
 import train.ticket.booking.app.passenger.service.IPassengerService;
 
 
 @RestController
-@Slf4j
 public class PassengerController {
 	
 

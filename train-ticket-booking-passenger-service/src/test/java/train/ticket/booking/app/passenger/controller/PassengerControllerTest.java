@@ -2,6 +2,7 @@ package train.ticket.booking.app.passenger.controller;
 
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import java.util.List;
@@ -15,6 +16,9 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import train.ticket.booking.app.passenger.dto.BookingReqDto;
 import train.ticket.booking.app.passenger.entity.Passenger;
 import train.ticket.booking.app.passenger.service.IPassengerService;
 
@@ -26,13 +30,33 @@ class PassengerControllerTest {
 	@MockBean
 	private IPassengerService passengerService;
 	
+	private BookingReqDto bookingReq;
+	private ObjectMapper objectMapper;
 	private Passenger passenger;
 	
 	@BeforeEach
 	void setUp() {
+		objectMapper = new ObjectMapper();
 		passenger = new Passenger();
 		passenger.setPassengerId(1);
 		passenger.setUserId(1);
+		
+		bookingReq = new BookingReqDto();
+		bookingReq.setBookingId(1);
+		bookingReq.setName("random");
+		bookingReq.setSeatId(1);
+		bookingReq.setSurname("random");
+		bookingReq.setUserId(1);
+	}
+	
+	@Test
+	void savePassenger() throws Exception{
+		
+		mockMvc.perform(post("/passengers")
+			.content(objectMapper.writeValueAsString(bookingReq))
+			.contentType(MediaType.APPLICATION_JSON))
+		.andExpect(status().isNoContent());
+		
 	}
 	
 	@Test
