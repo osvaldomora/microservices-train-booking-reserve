@@ -67,5 +67,12 @@ class PassengerControllerTest {
 				.contentType(MediaType.APPLICATION_JSON))
 		.andExpect(status().is2xxSuccessful());
 	}
+	
+	@Test
+	void testPort() throws Exception {
+		mockMvc.perform(get("/passengers/port")
+				.contentType(MediaType.APPLICATION_JSON))
+			.andExpect(status().isOk());
+	}
 
 }
