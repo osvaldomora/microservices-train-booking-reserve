@@ -9679,3 +9679,378 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2022-03-31 18:32:24,847 [Worker-400: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2022-03-31 18:32:24,848 [Worker-400: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2022-03-31 18:32:24,849 [Worker-400: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 18:32:24,849 [Worker-400: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 18:32:24,849 [Worker-400: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\src\test\resources
+2022-03-31 20:30:50,995 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-31 20:31:01,569 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hamcrest/java-hamcrest/2.0.0.0/java-hamcrest-2.0.0.0.pom
+2022-03-31 20:31:01,777 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hamcrest/java-hamcrest/2.0.0.0/java-hamcrest-2.0.0.0.pom
+2022-03-31 20:31:01,891 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/code/bean-matchers/bean-matchers/0.13/bean-matchers-0.13.pom
+2022-03-31 20:31:02,426 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/code/bean-matchers/bean-matchers/0.13/bean-matchers-0.13.pom
+2022-03-31 20:31:02,699 [AetherRepositoryConnector-repo.maven.apache.org-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hamcrest/java-hamcrest/2.0.0.0/java-hamcrest-2.0.0.0.jar
+2022-03-31 20:31:04,143 [AetherRepositoryConnector-repo.maven.apache.org-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/code/bean-matchers/bean-matchers/0.13/bean-matchers-0.13.jar
+2022-03-31 20:31:06,525 [AetherRepositoryConnector-repo.maven.apache.org-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hamcrest/java-hamcrest/2.0.0.0/java-hamcrest-2.0.0.0.jar
+2022-03-31 20:31:07,432 [AetherRepositoryConnector-repo.maven.apache.org-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/code/bean-matchers/bean-matchers/0.13/bean-matchers-0.13.jar
+2022-03-31 20:31:10,640 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:10,641 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:10,648 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-03-31 20:31:10,696 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:31:10,700 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:10,701 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:10,701 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\src\test\resources
+2022-03-31 20:31:18,956 [Worker-12: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: train.ticket.booking.app:train-ticket-booking-service:0.0.1-SNAPSHOT @ C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\pom.xml.
+2022-03-31 20:31:22,603 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:22,603 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:22,637 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:31:22,637 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:31:22,642 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:22,643 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:22,643 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\src\test\resources
+2022-03-31 20:31:25,135 [Worker-11: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hamcrest/java-hamcrest/2.0.0.0/java-hamcrest-2.0.0.0-sources.jar
+2022-03-31 20:31:25,242 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:25,242 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:25,247 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-03-31 20:31:25,272 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:31:25,277 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:25,277 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:25,277 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\src\test\resources
+2022-03-31 20:31:26,525 [Worker-7: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 20:31:26,615 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:26,616 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:26,616 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 20:31:26,656 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:31:26,660 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:26,660 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:26,660 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-user-service\src\test\resources
+2022-03-31 20:31:27,633 [Worker-11: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hamcrest/java-hamcrest/2.0.0.0/java-hamcrest-2.0.0.0-sources.jar
+2022-03-31 20:31:27,885 [Worker-11: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.hamcrest:java-hamcrest:2.0.0.0
+2022-03-31 20:31:28,756 [Worker-11: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/code/bean-matchers/bean-matchers/0.13/bean-matchers-0.13-sources.jar
+2022-03-31 20:31:29,405 [Worker-0: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: train.ticket.booking.app.user:train-ticket-booking-user-service:0.0.1-SNAPSHOT @ C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-user-service\pom.xml.
+2022-03-31 20:31:30,030 [Worker-0: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 20:31:31,165 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:31,165 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:31,166 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:31:31,167 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:31:31,170 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:31,170 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:31,170 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-user-service\src\test\resources
+2022-03-31 20:31:31,891 [Worker-11: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/code/bean-matchers/bean-matchers/0.13/bean-matchers-0.13-sources.jar
+2022-03-31 20:31:32,336 [Worker-11: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.google.code.bean-matchers:bean-matchers:0.13
+2022-03-31 20:31:33,335 [Worker-11: Download sources and javadoc] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 20:31:33,390 [Worker-11: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.google.code.bean-matchers:bean-matchers:0.13
+2022-03-31 20:31:34,438 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 20:31:34,488 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:34,488 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:34,489 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 20:31:34,632 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:31:34,820 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:34,820 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:34,820 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-train-service\src\test\resources
+2022-03-31 20:31:36,895 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:36,895 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:36,895 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:31:36,896 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:31:36,898 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:36,899 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:36,899 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\src\test\resources
+2022-03-31 20:31:37,408 [Worker-1: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: train.ticket.booking.app.user:train-ticket-booking-train-service:0.0.1-SNAPSHOT @ C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-train-service\pom.xml.
+2022-03-31 20:31:37,917 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 20:31:38,754 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:38,754 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:38,755 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:31:38,755 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:31:38,759 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:38,759 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:38,759 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-train-service\src\test\resources
+2022-03-31 20:31:40,765 [Worker-8: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 20:31:40,815 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:40,815 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:40,816 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 20:31:40,820 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:31:40,825 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:40,825 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:40,825 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-train-service\src\test\resources
+2022-03-31 20:31:40,978 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:40,978 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:40,979 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 20:31:40,986 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:31:40,988 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:31:40,988 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:31:40,988 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-user-service\src\test\resources
+2022-03-31 20:34:02,701 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-03-31 20:34:03,485 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: train.ticket.booking.app.user:train-ticket-booking-user-service:0.0.1-SNAPSHOT @ C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-user-service\pom.xml.
+2022-03-31 20:34:03,792 [Worker-2: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 20:34:03,992 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: train.ticket.booking.app.user:train-ticket-booking-train-service:0.0.1-SNAPSHOT @ C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-train-service\pom.xml.
+2022-03-31 20:34:04,049 [Worker-2: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 20:34:04,233 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: train.ticket.booking.app:train-ticket-booking-service:0.0.1-SNAPSHOT @ C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\pom.xml.
+2022-03-31 20:34:06,421 [Worker-2: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /train-ticket-booking-user-service/src/main/java
+2022-03-31 20:34:06,422 [Worker-2: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /train-ticket-booking-user-service/src/main/resources
+2022-03-31 20:34:06,423 [Worker-2: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /train-ticket-booking-user-service/src/main/resources
+2022-03-31 20:34:06,424 [Worker-2: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /train-ticket-booking-user-service/src/test/java
+2022-03-31 20:34:07,475 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2022-03-31 20:34:08,642 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:34:08,642 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:34:08,645 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:34:08,645 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:34:08,649 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:34:08,649 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:34:08,649 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\src\test\resources
+2022-03-31 20:34:09,152 [Worker-0: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 20:34:09,198 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:34:09,198 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:34:09,198 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:34:09,198 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:34:09,200 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:34:09,200 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:34:09,200 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-train-service\src\test\resources
+2022-03-31 20:34:10,299 [Worker-0: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 20:34:10,346 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:34:10,347 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:34:10,347 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 20:34:10,369 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:34:10,372 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:34:10,372 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:34:10,372 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-user-service\src\test\resources
+2022-03-31 20:44:46,677 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:44:46,682 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:44:46,687 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 20:44:46,718 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:44:46,724 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:44:46,724 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:44:46,725 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-user-service\src\test\resources
+2022-03-31 20:54:00,562 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:54:00,569 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:54:00,574 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-03-31 20:54:00,644 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 20:54:00,646 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 20:54:00,646 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 20:54:00,646 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\src\test\resources
+2022-03-31 21:16:26,653 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-31 21:16:30,796 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:16:30,797 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:16:30,804 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 21:16:30,839 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:16:30,844 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:16:30,844 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:16:30,844 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-eureka-server\src\test\resources
+2022-03-31 21:16:34,085 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:16:34,086 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:16:34,087 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 21:16:34,115 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 21:16:34,119 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:16:34,120 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:16:34,120 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-gateway\src\test\resources
+2022-03-31 21:16:36,583 [Worker-0: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: train.ticket.booking.app.passenger:train-ticket-booking-passenger-service:0.0.1-SNAPSHOT @ C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-passenger-service\pom.xml.
+2022-03-31 21:16:37,115 [Worker-0: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:16:38,242 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:16:38,243 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:16:38,243 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 21:16:38,281 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:16:38,284 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:16:38,284 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:16:38,285 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-passenger-service\src\test\resources
+2022-03-31 21:16:40,336 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:16:40,383 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:16:40,383 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:16:40,386 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 21:16:40,391 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:16:40,394 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:16:40,395 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:16:40,395 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-passenger-service\src\test\resources
+2022-03-31 21:16:41,963 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:16:41,963 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:16:41,963 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-03-31 21:16:41,984 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:16:41,986 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:16:41,987 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:16:41,987 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\src\test\resources
+2022-03-31 21:16:43,631 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:16:43,675 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:16:43,675 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:16:43,675 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 21:16:43,686 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:16:43,688 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:16:43,689 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:16:43,689 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-train-service\src\test\resources
+2022-03-31 21:16:44,995 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:16:45,044 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:16:45,044 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:16:45,045 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 21:16:45,048 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:16:45,051 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:16:45,051 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:16:45,052 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-user-service\src\test\resources
+2022-03-31 21:17:52,912 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:17:52,912 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:17:52,913 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:17:52,913 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:17:52,918 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:17:52,918 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:17:52,918 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\src\test\resources
+2022-03-31 21:32:46,775 [Worker-15: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: train.ticket.booking.app:train-ticket-booking-service:0.0.1-SNAPSHOT @ C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\pom.xml.
+2022-03-31 21:32:47,072 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:32:47,799 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:32:47,799 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:32:47,799 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:32:47,800 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:32:47,801 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:32:47,801 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:32:47,801 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\src\test\resources
+2022-03-31 21:32:49,800 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:32:49,837 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:32:49,837 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:32:49,838 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-03-31 21:32:49,844 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:32:49,847 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:32:49,847 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:32:49,847 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\src\test\resources
+2022-03-31 21:33:38,235 [Worker-6: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: train.ticket.booking.app:train-ticket-booking-service:0.0.1-SNAPSHOT @ C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\pom.xml.
+2022-03-31 21:33:38,459 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:33:38,917 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:33:38,917 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:33:38,917 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:33:38,917 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:33:38,919 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:33:38,919 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:33:38,919 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\src\test\resources
+2022-03-31 21:33:38,921 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.jacoco:jacoco-maven-plugin:jar:${jacoco.version} is missing, no dependency information available
+2022-03-31 21:34:17,908 [Worker-5: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-03-31 21:34:18,226 [Worker-5: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: train.ticket.booking.app.user:train-ticket-booking-train-service:0.0.1-SNAPSHOT @ C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-train-service\pom.xml.
+2022-03-31 21:34:18,476 [Worker-5: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:34:18,977 [Worker-5: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /train-ticket-booking-train-service/src/main/java
+2022-03-31 21:34:18,977 [Worker-5: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /train-ticket-booking-train-service/src/main/resources
+2022-03-31 21:34:18,977 [Worker-5: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /train-ticket-booking-train-service/src/main/resources
+2022-03-31 21:34:18,978 [Worker-5: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /train-ticket-booking-train-service/src/test/java
+2022-03-31 21:34:19,836 [Worker-5: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2022-03-31 21:34:20,825 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:34:20,859 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:34:20,859 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:34:20,860 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 21:34:20,863 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:34:20,865 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:34:20,865 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:34:20,865 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-train-service\src\test\resources
+2022-03-31 21:34:53,346 [Worker-6: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: train.ticket.booking.app:train-ticket-booking-service:0.0.1-SNAPSHOT @ C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\pom.xml.
+2022-03-31 21:34:53,395 [Worker-13: reload maven project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:34:53,583 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:34:54,253 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:34:54,253 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:34:54,254 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-03-31 21:34:54,501 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:34:54,503 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:34:54,503 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:34:54,504 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\src\test\resources
+2022-03-31 21:49:33,741 [Worker-14: Check for devtools] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:49:35,964 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-03-31 21:49:36,878 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: train.ticket.booking.app:train-ticket-booking-service:0.0.1-SNAPSHOT @ C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\pom.xml.
+2022-03-31 21:49:37,336 [Worker-17: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:49:42,965 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /train-ticket-booking-service/src/main/java
+2022-03-31 21:49:42,966 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /train-ticket-booking-service/src/main/resources
+2022-03-31 21:49:42,966 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /train-ticket-booking-service/src/main/resources
+2022-03-31 21:49:42,967 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /train-ticket-booking-service/src/test/java
+2022-03-31 21:49:45,163 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 9 sec
+2022-03-31 21:49:46,560 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:49:46,604 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:49:46,604 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:49:46,605 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-03-31 21:49:46,619 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:49:46,622 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:49:46,622 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:49:46,622 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\src\test\resources
+2022-03-31 21:50:51,980 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:50:51,981 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:50:51,983 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 21:50:52,056 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:50:52,058 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:50:52,058 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:50:52,059 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-passenger-service\src\test\resources
+2022-03-31 21:51:07,783 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-03-31 21:51:10,733 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: train.ticket.booking.gateway:train-ticket-booking-gateway:0.0.1-SNAPSHOT @ C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-gateway\pom.xml.
+2022-03-31 21:51:11,613 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: train.ticket.booking.app.user:train-ticket-booking-user-service:0.0.1-SNAPSHOT @ C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-user-service\pom.xml.
+2022-03-31 21:51:11,692 [Worker-17: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:51:11,897 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: train.ticket.booking.app.eureka.server:train-ticket-booking-eureka-server:0.0.1-SNAPSHOT @ C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-eureka-server\pom.xml.
+2022-03-31 21:51:12,060 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: train.ticket.booking.app.user:train-ticket-booking-train-service:0.0.1-SNAPSHOT @ C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-train-service\pom.xml.
+2022-03-31 21:51:12,332 [Worker-17: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:51:12,456 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: train.ticket.booking.app.passenger:train-ticket-booking-passenger-service:0.0.1-SNAPSHOT @ C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-passenger-service\pom.xml.
+2022-03-31 21:51:12,463 [Worker-17: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:51:12,611 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: train.ticket.booking.app:train-ticket-booking-service:0.0.1-SNAPSHOT @ C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\pom.xml.
+2022-03-31 21:51:12,636 [Worker-17: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:51:17,627 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /train-ticket-booking-eureka-server/src/main/java
+2022-03-31 21:51:17,627 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /train-ticket-booking-eureka-server/src/main/resources
+2022-03-31 21:51:17,627 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /train-ticket-booking-eureka-server/src/main/resources
+2022-03-31 21:51:17,628 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /train-ticket-booking-eureka-server/src/test/java
+2022-03-31 21:51:17,940 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /train-ticket-booking-gateway/src/main/java
+2022-03-31 21:51:17,941 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /train-ticket-booking-gateway/src/main/resources
+2022-03-31 21:51:17,941 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /train-ticket-booking-gateway/src/main/resources
+2022-03-31 21:51:17,942 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /train-ticket-booking-gateway/src/test/java
+2022-03-31 21:51:18,281 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /train-ticket-booking-passenger-service/src/main/java
+2022-03-31 21:51:18,281 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /train-ticket-booking-passenger-service/src/main/resources
+2022-03-31 21:51:18,281 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /train-ticket-booking-passenger-service/src/main/resources
+2022-03-31 21:51:18,282 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /train-ticket-booking-passenger-service/src/test/java
+2022-03-31 21:51:18,800 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /train-ticket-booking-service/src/main/java
+2022-03-31 21:51:18,801 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /train-ticket-booking-service/src/main/resources
+2022-03-31 21:51:18,801 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /train-ticket-booking-service/src/main/resources
+2022-03-31 21:51:18,802 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /train-ticket-booking-service/src/test/java
+2022-03-31 21:51:20,059 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /train-ticket-booking-train-service/src/main/java
+2022-03-31 21:51:20,061 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /train-ticket-booking-train-service/src/main/resources
+2022-03-31 21:51:20,061 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /train-ticket-booking-train-service/src/main/resources
+2022-03-31 21:51:20,069 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /train-ticket-booking-train-service/src/test/java
+2022-03-31 21:51:20,759 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /train-ticket-booking-user-service/src/main/java
+2022-03-31 21:51:20,759 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /train-ticket-booking-user-service/src/main/resources
+2022-03-31 21:51:20,760 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /train-ticket-booking-user-service/src/main/resources
+2022-03-31 21:51:20,760 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /train-ticket-booking-user-service/src/test/java
+2022-03-31 21:51:22,436 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 14 sec
+2022-03-31 21:51:23,467 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:51:23,468 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:51:23,468 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 21:51:23,493 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:51:23,495 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:51:23,496 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:51:23,496 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-eureka-server\src\test\resources
+2022-03-31 21:51:25,558 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:51:25,559 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:51:25,559 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 21:51:25,566 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 21:51:25,579 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:51:25,579 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:51:25,579 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-gateway\src\test\resources
+2022-03-31 21:51:26,257 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:51:26,292 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:51:26,292 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:51:26,292 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 21:51:26,294 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:51:26,295 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:51:26,295 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:51:26,295 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-passenger-service\src\test\resources
+2022-03-31 21:51:27,101 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:51:27,140 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:51:27,140 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:51:27,141 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-03-31 21:51:27,146 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:51:27,148 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:51:27,148 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:51:27,149 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\src\test\resources
+2022-03-31 21:51:28,237 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:51:28,266 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:51:28,266 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:51:28,267 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 21:51:28,274 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:51:28,276 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:51:28,276 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:51:28,276 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-train-service\src\test\resources
+2022-03-31 21:51:28,818 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-03-31 21:51:28,843 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:51:28,844 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:51:28,844 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 21:51:28,847 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:51:28,849 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:51:28,849 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:51:28,849 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-user-service\src\test\resources
+2022-03-31 21:52:15,182 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:52:15,182 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:52:15,183 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-31 21:52:15,194 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-31 21:52:15,195 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-31 21:52:15,195 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-31 21:52:15,195 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\osvae\Documents\microservices-ranjitha\train-ticket-booking-service\src\test\resources
+2022-04-01 05:42:19,850 [Worker-27: Launching train-ticket-booking-passenger-service - TrainTicketBookingPassengerApplication] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
+2022-04-01 05:42:47,788 [Worker-27: Launching train-ticket-booking-train-service - TrainTicketBookingUserApplication] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.codehaus.mojo:sonar-maven-plugin:pom:3.6.0.1398 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:pom:3.6.0.1398
