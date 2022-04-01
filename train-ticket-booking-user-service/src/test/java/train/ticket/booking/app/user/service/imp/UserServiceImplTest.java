@@ -73,7 +73,7 @@ class UserServiceImplTest {
 	void dtoValids() {
 		
 		assertNotNull(new UserReq());
-		assertNotNull(new UserDTO());
+		
 		
 		assertThat(UserReq.class, allOf(hasValidBeanConstructor(), hasValidGettersAndSetters()));
 		assertThat(UserDTO.class, allOf(hasValidBeanConstructor(), hasValidGettersAndSetters()));

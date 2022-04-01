@@ -7,6 +7,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import train.ticket.booking.app.train.dto.TrainDetails;
 import train.ticket.booking.app.train.dto.TrainSearchByDetsReponseDTO;
 import train.ticket.booking.app.train.dto.response.RouteDto;
 import train.ticket.booking.app.train.dto.response.SeatDto;

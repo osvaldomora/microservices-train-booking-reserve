@@ -138,7 +138,7 @@ class TrainServiceImplTest {
 	
 	@Test
 	void dtoValids() {
-		assertNotNull(new TrainSearchDto());
+		//assertNotNull(new TrainSearchDto());
 		assertThat(TrainSearchDto.class, allOf(hasValidBeanConstructor(), hasValidGettersAndSetters()));
 	
 	}

@@ -9,9 +9,7 @@ public class TrainSearchDto {
 		this.capacity = capacity;
 		this.model = model;
 	}
-	public TrainSearchDto() {
-		
-	}
+	
 	public String getCapacity() {
 		return capacity;
 	}

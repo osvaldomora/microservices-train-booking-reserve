@@ -11,9 +11,7 @@ public class UserDTO {
 		this.email = email;
 		this.phoneNo = phoneNo;
 	}
-	public UserDTO() {
 
-	}
 	public String getUsername() {
 		return username;
 	}

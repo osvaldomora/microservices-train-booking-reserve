@@ -11,8 +11,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import train.ticket.booking.app.train.dto.TrainDetails;
 import train.ticket.booking.app.train.dto.TrainSearchByDetsReponseDTO;
 import train.ticket.booking.app.train.dto.response.TrainDto;
+import train.ticket.booking.app.train.entity.Train;
 import train.ticket.booking.app.train.service.ITrainService;
 
 
@@ -40,4 +42,5 @@ public class TrainController {
 		
 		return new ResponseEntity<>(trainSearchDto, HttpStatus.OK);
 	}
+	
 }
