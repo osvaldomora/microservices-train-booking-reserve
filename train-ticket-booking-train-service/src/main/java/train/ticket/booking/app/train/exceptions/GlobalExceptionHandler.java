@@ -19,8 +19,8 @@ public class GlobalExceptionHandler {
 		
 	}
 	
-	/*
-	@ExceptionHandler(SeatNotAvaibleException.class)
+	
+	/*@ExceptionHandler(SeatNotAvaibleException.class)
 	public ResponseEntity<ErrorResponse> handleException(SeatNotAvaibleException ex){
 		ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(), Constants.SEAT_NOT_FOUND);
 		errorResponse.setDateTime(LocalDateTime.now());
