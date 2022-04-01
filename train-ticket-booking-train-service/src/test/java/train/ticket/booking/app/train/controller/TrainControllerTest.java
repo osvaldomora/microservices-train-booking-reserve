@@ -54,12 +54,5 @@ class TrainControllerTest {
 		
 	}
 	
-	@Test
-	void testPort() throws Exception {
-		mockMvc.perform(get("/trains/port")
-				.contentType(MediaType.APPLICATION_JSON))
-			.andExpect(status().isOk());
-		//assertThat(this.bookingService.getPort()).isEqualTo(8890);
-	}
 
 }

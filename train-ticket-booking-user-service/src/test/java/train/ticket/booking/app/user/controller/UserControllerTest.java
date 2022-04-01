@@ -2,6 +2,7 @@ package train.ticket.booking.app.user.controller;
 
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -66,5 +67,11 @@ class UserControllerTest {
 				.contentType(MediaType.APPLICATION_JSON))
 		.andExpect(status().is2xxSuccessful());
 	}
-
+	
+	@Test
+	void testPort() throws Exception {
+		mockMvc.perform(get("/users/port")
+				.contentType(MediaType.APPLICATION_JSON))
+			.andExpect(status().isOk());
+	}
 }
