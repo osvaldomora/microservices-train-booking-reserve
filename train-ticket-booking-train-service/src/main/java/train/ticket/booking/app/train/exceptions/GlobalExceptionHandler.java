@@ -19,14 +19,22 @@ public class GlobalExceptionHandler {
 		
 	}
 	
+	@ExceptionHandler(TrainNotFoundException.class)
+	public ResponseEntity<ErrorResponse> handleException(TrainNotFoundException ex){
+		ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(), Constants.TRAIN_ROUTE_NOT_FOUND);
+		errorResponse.setDateTime(LocalDateTime.now());
+		return new ResponseEntity<>(errorResponse, HttpStatus.OK);
+		
+	}
 	
-	/*@ExceptionHandler(SeatNotAvaibleException.class)
+	@ExceptionHandler(SeatNotAvaibleException.class)
 	public ResponseEntity<ErrorResponse> handleException(SeatNotAvaibleException ex){
 		ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(), Constants.SEAT_NOT_FOUND);
 		errorResponse.setDateTime(LocalDateTime.now());
 		return new ResponseEntity<ErrorResponse>(errorResponse, HttpStatus.OK);
 		
-	}*/
+	}
+	
 	@ExceptionHandler(TrainNotFoundByRouteException.class)
 	public ResponseEntity<ErrorResponse> handleException(TrainNotFoundByRouteException ex){
 		ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(), Constants.TRAIN_ROUTE_NOT_FOUND);
