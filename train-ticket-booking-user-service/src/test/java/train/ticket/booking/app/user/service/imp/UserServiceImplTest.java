@@ -47,7 +47,7 @@ class UserServiceImplTest {
 	
 	@Test
 	void findByNameAndPasswordTest() {
-		when(userRepo.findByUsernameAndPassword("random", "123")).thenReturn(Optional.of(userDto));
+		when(userRepo.findByUsernameAndPassword("random", "123")).thenReturn(Optional.of(user));
 		
 		UserDTO userDtoRes = userServiceImpl.findByNameAndPassword("random", "123");
 		

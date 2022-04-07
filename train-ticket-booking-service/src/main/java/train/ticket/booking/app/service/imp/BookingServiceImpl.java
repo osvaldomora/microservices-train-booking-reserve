@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.circuitbreaker.CircuitBreaker;
 import org.springframework.cloud.client.circuitbreaker.CircuitBreakerFactory;
 import org.springframework.stereotype.Service;
 
@@ -54,8 +53,8 @@ public class BookingServiceImpl implements IBookingService {
 		/**
 		 * A User is created by default if its is not registed yet
 		 */
-		final UserClient use;
-	/*	CircuitBreaker circuitBreaker = circuitBreakerFactory.create("circuitbreaker");
+	final UserClient use;
+	/*		CircuitBreaker circuitBreaker = circuitBreakerFactory.create("circuitbreaker");
 		use = circuitBreaker.run(() -> userClientRestFeign.login(user), throwable -> getDefaultInfo());
 	*/
 		use=userClientRestFeign.login(user);

@@ -22,13 +22,13 @@ class GlobalExceptionHandlerTest {
 	@Mock
 	BindingResult bindingResult;
 	
-	@Test
+/*	@Test
 	void handleExceptionTestUserNotFound() {
 		UserNotFoundException ex= new UserNotFoundException("user not found");
 		ResponseEntity<ErrorResponse> resp=globalExceptionHandler.handleException(ex);
 		assertEquals("user not found", resp.getBody().getMessage());
 	}
-	
+	*/
 	
 	@Test
 	void handleExceptionValid() {

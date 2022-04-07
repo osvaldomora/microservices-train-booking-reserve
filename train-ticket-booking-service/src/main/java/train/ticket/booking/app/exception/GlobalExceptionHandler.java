@@ -39,7 +39,7 @@ public class GlobalExceptionHandler {
 	@ExceptionHandler(MethodArgumentNotValidException.class)
 	public ResponseEntity<ValidationErrorResponse> handleExceptionValid(MethodArgumentNotValidException ex) {
 
-		ValidationErrorResponse errorResponse = new ValidationErrorResponse("invalid arguments parameters", Constants.INVALID_ARGS);
+		ValidationErrorResponse errorResponse = new ValidationErrorResponse("invalid arguments parameters", "validation error");
 		ex.getBindingResult().getFieldErrors().stream().forEach(error->{
 			System.out.println("into foreach");
 			errorResponse.getInvalidArguments().put(error.getField(), error.getDefaultMessage());
@@ -49,7 +49,7 @@ public class GlobalExceptionHandler {
 		errorResponse.setDate(new Date());
 		return new ResponseEntity<ValidationErrorResponse>(errorResponse, HttpStatus.OK);
 
-	}
-	*/
+	}  */
+	
 
 }

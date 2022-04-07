@@ -95,7 +95,7 @@ assertEquals(response.size(), 1);
 	}
 	
 	@Test
-	@Disabled
+//	@Disabled
 	void bookTicketfail() {
 
 		BookingReqDto userReqDto = BookingReqDto

@@ -21,8 +21,14 @@ public class UserServiceImpl implements IUserService{
 	@Override
 	public UserDTO findByNameAndPassword(String name, String pass) {
 		
-		return userRepo.findByUsernameAndPassword(name, pass)
+		User user=	userRepo.findByUsernameAndPassword(name, pass)
 				.orElseThrow(() -> new UserNotFoundException("User not found"));
+
+		UserDTO us= new UserDTO();
+		us.setEmail(user.getEmail());
+		us.setUsername(user.getUsername());
+		return us;
+
 
 	}
 

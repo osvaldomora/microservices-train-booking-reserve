@@ -16,7 +16,7 @@ import train.ticket.booking.app.user.constants.Constants;
 public class GlobalExceptionHandler {
 	
 	
-
+/*
 	@ExceptionHandler(UserNotFoundException.class)
 	public ResponseEntity<ErrorResponse> handleException(UserNotFoundException ex) {
 
@@ -27,7 +27,7 @@ public class GlobalExceptionHandler {
 
 	}
 	
-
+*/
 	
 	@ExceptionHandler(MethodArgumentNotValidException.class)
 	public ResponseEntity<ValidationErrorResponse> handleExceptionValid(MethodArgumentNotValidException ex) {
